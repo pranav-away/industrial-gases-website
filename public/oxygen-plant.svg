@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" fill="none">
+<defs>
+ <linearGradient id="bg" x1="210" y1="0" x2="1190" y2="850" gradientUnits="userSpaceOnUse"><stop stop-color="#15364e"/><stop offset=".6" stop-color="#0c2334"/><stop offset="1" stop-color="#17394d"/></linearGradient>
+ <linearGradient id="steel" x1="0" x2="1"><stop stop-color="#1c3748"/><stop offset=".18" stop-color="#55778b"/><stop offset=".32" stop-color="#90adbc"/><stop offset=".46" stop-color="#b4cbd4"/><stop offset=".51" stop-color="#8caab9"/><stop offset=".73" stop-color="#42667d"/><stop offset="1" stop-color="#203c50"/></linearGradient>
+ <linearGradient id="blue" x1="0" x2="1"><stop stop-color="#0b3453"/><stop offset=".2" stop-color="#176797"/><stop offset=".38" stop-color="#3398c6"/><stop offset=".5" stop-color="#70b7d2"/><stop offset=".55" stop-color="#3b91b7"/><stop offset=".8" stop-color="#14577e"/><stop offset="1" stop-color="#102d43"/></linearGradient>
+ <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#213f50"/><stop offset="1" stop-color="#0b1e2d"/></linearGradient>
+ <linearGradient id="pipe" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#345b72"/><stop offset=".45" stop-color="#98b7c8"/><stop offset=".65" stop-color="#5e859c"/><stop offset="1" stop-color="#234456"/></linearGradient>
+ <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0b2030" stop-opacity="0"/><stop offset="1" stop-color="#0b2030" stop-opacity=".8"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#81c3e6" stop-opacity=".2"/><stop offset="1" stop-color="#81c3e6" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="70" height="70" patternUnits="userSpaceOnUse"><path d="M70 0H0v70" stroke="#8dc1db" stroke-opacity=".05"/></pattern>
+ <filter id="shadow"><feGaussianBlur stdDeviation="16"/></filter>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".045"/></feComponentTransfer><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+ <g id="tank"><rect x="0" y="98" width="121" height="444" rx="5" fill="url(#steel)"/><path d="M0 98C0 41 19 12 60 12s61 29 61 86" fill="url(#steel)"/><ellipse cx="60.5" cy="540" rx="60.5" ry="15" fill="#30516a"/><ellipse cx="60.5" cy="532" rx="60.5" ry="11" fill="url(#steel)"/><path d="M7 101h107M7 105h107M7 482h107M7 486h107" stroke="#c0d4dc" stroke-opacity=".35"/><rect x="48" y="0" width="25" height="26" rx="3" fill="url(#pipe)"/><rect x="41" y="3" width="38" height="7" rx="2" fill="#a5c1cc"/><path d="M61 1v-20h24" stroke="#526c7c" stroke-width="8"/><rect x="77" y="-24" width="17" height="11" rx="2" fill="#678f9e"/><rect x="39" y="281" width="47" height="50" rx="2" fill="#213f52" stroke="#91b0bf" stroke-opacity=".5"/><text x="62" y="310" text-anchor="middle" fill="#d3e1e7" font-family="Arial" font-size="19">O₂</text><path d="M15 127v330M19 127v330" stroke="#d8e6ec" stroke-opacity=".1"/></g>
+ <g id="cylinder"><path d="M0 110c0-31 12-51 32-55V37h21v18c20 4 32 24 32 55v364c0 17-85 17-85 0Z" fill="url(#blue)"/><ellipse cx="42.5" cy="474" rx="42.5" ry="8" fill="#123a55"/><path d="M4 142h77M4 149h77" stroke="#9ccadf" stroke-opacity=".35"/><rect x="29" y="22" width="26" height="15" fill="url(#pipe)"/><path d="M42 23V8h20" stroke="#6d8d9b" stroke-width="7"/><path d="M58 0v17M49 8h22" stroke="#8cb3c3" stroke-width="4"/><rect x="17" y="223" width="51" height="62" rx="2" fill="#0c324b" stroke="#78b0ce" stroke-opacity=".4"/><text x="42" y="262" text-anchor="middle" fill="#c4e4f3" font-family="Arial" font-size="25">O₂</text><path d="M12 169v253" stroke="#c0eaff" stroke-opacity=".13" stroke-width="2"/></g>
+</defs>
+<rect width="1200" height="850" fill="url(#bg)"/><rect width="1200" height="850" fill="url(#grid)"/>
+<ellipse cx="860" cy="280" rx="480" ry="420" fill="url(#glow)"/>
+<g opacity=".3" stroke="#66889e"><path d="M352 0v670M523 0v670M1110 0v670" stroke-width="7"/><path d="M352 150h760M352 350h760M352 550h760" stroke-width="5"/><path d="m352 150 171 200-171 200m758-400L940 350l170 200" stroke-width="2"/></g>
+<g opacity=".47"><path d="M1044 667V155q0-32 35-32h121" stroke="#284c62" stroke-width="27"/><path d="M1044 667V155q0-32 35-32h121" stroke="url(#pipe)" stroke-width="15"/><path d="M1004 667V196q0-32 35-32h161" stroke="#284c62" stroke-width="21"/><path d="M1004 667V196q0-32 35-32h161" stroke="url(#pipe)" stroke-width="11"/></g>
+<path d="M0 682 1200 620v230H0Z" fill="url(#floor)"/>
+<g opacity=".17" stroke="#73a3bd"><path d="m70 850 611-201M450 850l335-210M950 850l43-220M0 738l1200-47M0 793l1200-52"/></g>
+<ellipse cx="779" cy="714" rx="300" ry="38" fill="#040e17" opacity=".9" filter="url(#shadow)"/>
+<g transform="translate(745 155) scale(.86)"><use href="#tank"/></g><g transform="translate(885 132) scale(.96)"><use href="#tank"/></g>
+<g transform="translate(590 130)"><use href="#tank"/></g>
+<g stroke="#809dad" stroke-width="9"><path d="M649 115V76h304v37"/><path d="M797 141V77"/></g><g fill="#6d91a7"><rect x="641" y="70" width="15" height="14"/><rect x="789" y="70" width="15" height="14"/><rect x="945" y="70" width="15" height="14"/></g>
+<g transform="translate(1004 380) scale(.73)"><use href="#cylinder"/></g>
+<g transform="translate(896 356) scale(.8)"><use href="#cylinder"/></g>
+<g transform="translate(778 329) scale(.87)"><use href="#cylinder"/></g>
+<g transform="translate(643 303) scale(.94)"><use href="#cylinder"/></g>
+<g transform="translate(496 276)"><use href="#cylinder"/></g>
+<path d="M478 724h637" stroke="#183b53" stroke-width="12"/><path d="M478 718h637" stroke="#4a7087" stroke-width="3"/>
+<g stroke="#325d75" stroke-width="6"><path d="M485 720V531h622v173"/><path d="M485 623h622"/></g><path d="M486 528h621" stroke="#98b6c5" stroke-opacity=".4" stroke-width="2"/>
+<g opacity=".5" fill="#b2d5e7" font-family="monospace" font-size="9" letter-spacing="2"><text x="969" y="68">OXYGEN / INDUSTRIAL</text><text x="1062" y="735">O₂</text></g>
+<g stroke="#a2d2eb" stroke-opacity=".25"><path d="M1020 260h105v-54M569 672H431v47"/><circle cx="1020" cy="260" r="3" fill="#8bb6ce"/><circle cx="569" cy="672" r="3" fill="#8bb6ce"/></g>
+<rect width="1200" height="850" fill="url(#shade)"/><rect width="1200" height="850" opacity=".4" filter="url(#grain)"/>
+</svg>

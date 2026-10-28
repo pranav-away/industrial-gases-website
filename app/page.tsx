@@ -1,0 +1,19 @@
+import Link from "next/link";
+import Image from "next/image";
+import { Arrow } from "@/components/icons";
+import { CompanyList, CTA, Eyebrow, FactoryCards, ProductCards } from "@/components/shared";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata("Industrial oxygen manufacturing & gas supply in Kolkata", "Industrial oxygen manufactured by us, nitrogen and other industrial gases supplied. 40 years of experience with factories in Howrah, Junglepur and Durgapur.", "/");
+
+export default function Home() {
+  return <>
+    <section className="home-hero"><div className="hero-art"><Image src="/oxygen-plant.svg" alt="Illustrative rendering of industrial gas cylinders and pipework; not an actual facility" fill priority sizes="(max-width: 800px) 100vw, 70vw"/></div><div className="container hero-content"><Eyebrow light>ESTABLISHED EXPERIENCE. INDUSTRIAL FOCUS.</Eyebrow><h1>Industrial Oxygen.<br/><span>Four Decades</span><br/>of Experience.</h1><p className="hero-description">Based in Kolkata, we manufacture industrial oxygen and supply nitrogen and other industrial gases, with three factory locations in West Bengal.</p><div className="hero-buttons"><Link href="/contact" className="button">Request a quote <Arrow diagonal/></Link><Link href="/products" className="hero-secondary">Explore our products <Arrow/></Link></div><div className="hero-location"><span className="status-dot"/>KOLKATA, WEST BENGAL, INDIA</div></div><div className="hero-art-caption">INDUSTRIAL GAS SYSTEMS · ILLUSTRATIVE RENDERING</div></section>
+    <section className="facts-strip" aria-label="Our business at a glance"><div className="container facts-grid"><div><strong>40<span>years</span></strong><p>Of industry experience</p></div><div><strong>03</strong><p>Factory locations in West Bengal</p></div><div><strong>03</strong><p>Owned group companies</p></div><div className="fact-focus"><span className="tiny-cross">+</span><p>Oxygen manufacturing.<br/>Industrial gas supply.<br/><b>A focused business.</b></p></div></div></section>
+    <section className="section container intro-section"><Eyebrow>OUR BUSINESS</Eyebrow><div className="intro-grid"><h2>Experience that<br/>understands industry.</h2><div><p className="lead">Four decades in industrial gases. A Kolkata base. A three-factory presence in West Bengal.</p><p>We bring our experience to industrial oxygen manufacturing and the supply of nitrogen and other industrial gases. Our business is built around understanding what industrial buyers need.</p><Link className="text-link" href="/about">Get to know our business <Arrow/></Link></div></div></section>
+    <section className="section products-section"><div className="container"><div className="section-heading"><div><Eyebrow>OUR PRODUCTS</Eyebrow><h2>Essential gases.<br/>A clear focus.</h2></div><div><p>What we manufacture. What we supply.<br/>Find the right starting point for your enquiry.</p><Link href="/products" className="text-link">Explore our products <Arrow/></Link></div></div><ProductCards/></div></section>
+    <section className="section container"><div className="section-heading"><div><Eyebrow>OUR FACTORY NETWORK</Eyebrow><h2>Three locations.<br/>One industrial focus.</h2></div><div><p>Our factory presence across Howrah,<br/>Junglepur and Durgapur, West Bengal.</p><Link className="text-link" href="/factories">Explore our factories <Arrow/></Link></div></div><FactoryCards/></section>
+    <section className="section group-section"><div className="container group-grid"><div><Eyebrow>OUR GROUP COMPANIES</Eyebrow><h2>Three companies.<br/>Shared experience.</h2><p>Our owned group companies operate in the industrial gases business under the leadership of Mr. Anirudh Jalan.</p><Link href="/group-companies" className="text-link">Meet our group companies <Arrow/></Link></div><CompanyList/></div></section>
+    <CTA/>
+  </>;
+}
